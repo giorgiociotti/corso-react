@@ -1,5 +1,5 @@
-import "Navbar.css";
-import "link.jsx";
+import "./Navbar.css";
+import "./Link.jsx";
 import Link from "./Link";
 function Navbar() {
     return (
