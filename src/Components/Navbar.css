@@ -1,0 +1,59 @@
+/* Stile base per la navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1); /* Trasparente per il tema scuro */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Stile per i link della navbar */
+.navbar a {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+/* Effetto hover per i link della navbar */
+.navbar a:hover {
+  color: #646cff; /* Colore hover */
+}
+
+/* Stile per il logo nella navbar */
+.navbar .logo {
+  height: 4em; /* Dimensione del logo */
+}
+
+/* Media query per il tema chiaro */
+@media (prefers-color-scheme: light) {
+  .navbar {
+    background-color: #ffffff; /* Sfondo chiaro */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Bordo inferiore chiaro */
+  }
+  
+  .navbar a {
+    color: #213547; /* Colore del testo chiaro */
+  }
+  
+  .navbar a:hover {
+    color: #535bf2; /* Colore hover chiaro */
+  }
+}
+
+/* Stile responsivo per schermi piccoli */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Disposizione verticale su schermi piccoli */
+    align-items: flex-start; /* Allineamento a sinistra */
+    padding: 1rem; /* Padding ridotto */
+    border-bottom: none; /* Rimuovi bordo inferiore su schermi piccoli */
+  }
+
+  .navbar a {
+    margin: 0.5rem 0; /* Margine verticale tra i link */
+    width: 100%; /* Larghezza completa per i link */
+    text-align: left; /* Allineamento a sinistra del testo */
+  }
+}
