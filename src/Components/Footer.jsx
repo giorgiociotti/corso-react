@@ -5,22 +5,23 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-container">
+                <p className="footer-description">
+                    Poggio Software è una società di gestione dati con sede a Roma, Italia. Il nostro team vi aiuterà in ogni fase del tuo progetto digitale. Noi crediamo che il futuro sia digitale.
+                </p>
+                
                 {/* Colonna Logo e Descrizione */}
                 <div className="footer-left">
                     <img
-                        src="public\Poggio Software logo.png"
+                        src="public/Poggio Software logo.png"
                         alt="Logo Poggio Software"
                         className="footer-logo"
                     />
-                    <p className="footer-description">
-                        Poggio Software è una società di gestione dati con sede a Roma, Italia. Il nostro team vi aiuterà in ogni fase del tuo progetto digitale. Noi crediamo che il futuro sia digitale.
-                    </p>
                 </div>
 
                 {/* Colonne Servizi e Contatti */}
                 <div className="footer-links-container">
-                    {/* Colonna Servizi */}
-                    <div className="footer-right">
+                    {/* Servizi */}
+                    <div className="footer-column">
                         <h3 className="footer-title">Servizi</h3>
                         <ul className="footer-links">
                             <li>Data Integration</li>
@@ -34,7 +35,7 @@ function Footer() {
                         </ul>
                     </div>
 
-                    {/* Colonna Contatti */}
+                    {/* Contatti */}
                     <div className="footer-column">
                         <h3 className="footer-title">Contattaci</h3>
                         <p>

@@ -1,32 +1,31 @@
-/* Stile base per il footer */
+/* Footer globale */
 .footer {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Allineamento in alto per il logo e contatti */
+    align-items: flex-start;
     padding: 1rem 2rem;
-    background-color: rgba(255, 255, 255, 0.1); /* Trasparente per il tema scuro */
+    background-color: rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    position: relative; /* Posizione relativa per il footer */
+    position: relative;
 }
 
 /* Contenitore a sinistra (logo e descrizione) */
 .footer-left {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 30%; /* Limita la larghezza */
+    align-items: center;
+    width: 30%;
 }
 
-/* Contenitore a destra (servizi e contatti) */
+/* Contenitore per colonne (servizi e contatti) */
 .footer-links-container {
     display: flex;
     justify-content: space-between;
-    width: 65%; /* Limita la larghezza delle colonne di destra */
+    width: 65%;
 }
 
-/* Contenitore per la colonna servizzi e contatti */
-.footer-right, .footer-column {
-    width: 48%; /* Occupano il 48% della larghezza rimanente */
+/* Colonne servizzi e contatti */
+.footer-column {
+    width: 48%;
 }
 
 /* Stile per i link del footer */
@@ -37,16 +36,22 @@
     margin: 0 1rem;
 }
 
-/* Effetto hover per i link del footer */
 .footer a:hover {
-    color: #646cff; /* Colore hover */
+    color: #646cff;
 }
 
-/* Stile per il logo nel footer */
+/* Stile per il logo */
 .footer-logo {
-    width: 200px; /* Imposta una larghezza fissa per il logo */
-    height: auto; /* Mantiene le proporzioni originali */
-    margin-bottom: 20px; /* Spazio sotto il logo */
+    width: 150px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+/* Descrizione sotto il logo */
+.footer-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 300px;
 }
 
 /* Rimuove i puntini dalla lista */
@@ -61,38 +66,47 @@
     padding: 5px 0;
 }
 
-/* Media query per il tema chiaro */
+/* Media query per tema chiaro */
 @media (prefers-color-scheme: light) {
     .footer {
-        background-color: #ffffff; /* Sfondo chiaro */
-        border-top: 1px solid rgba(0, 0, 0, 0.1); /* Bordo superiore chiaro */
+        background-color: #ffffff;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .footer a {
-        color: #213547; /* Colore del testo chiaro */
+        color: #213547;
     }
 
     .footer a:hover {
-        color: #535bf2; /* Colore hover chiaro */
+        color: #535bf2;
     }
 }
 
-/* Stile responsivo per schermi piccoli */
+/* Media query per schermi piccoli */
 @media (max-width: 768px) {
     .footer {
-        flex-direction: column; /* Disposizione verticale su schermi piccoli */
-        align-items: flex-start; /* Allineamento a sinistra */
-        padding: 1rem; /* Padding ridotto */
-        border-top: none; /* Rimuovi bordo superiore su schermi piccoli */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        border-top: none;
     }
 
-    .footer-left, .footer-right, .footer-column {
-        width: 100%; /* Larghezza completa per entrambi i contenitori */
-        text-align: left; /* Allineamento a sinistra del testo */
+    .footer-left, .footer-column {
+        width: 100%;
+        text-align: left;
     }
 
     .footer a {
-        margin: 0.5rem 0; /* Margine verticale tra i link */
-        width: 100%; /* Larghezza completa per i link */
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+
+    .footer-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-description {
+        font-size: 0.8rem;
     }
 }
