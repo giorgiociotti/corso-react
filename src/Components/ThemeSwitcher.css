@@ -1,0 +1,36 @@
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.theme-switcher input {
+    display: none; /* Nasconde l'input checkbox */
+}
+
+.slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.theme-switcher input:checked + .slider {
+    background-color: #646cff; /* Colore dello slider quando è attivo */
+}
+
+.slider::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.theme-switcher input:checked + .slider::before {
+    transform: translateX(20px); /* Sposta lo slider a destra */
+}

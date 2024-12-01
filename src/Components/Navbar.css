@@ -4,9 +4,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    /* Trasparente per il tema scuro */
+    background-color: rgba(255, 255, 255, 0.1); /* Trasparente per il tema scuro */
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar ul {
+    list-style-type: none; /* Rimuove i puntini dalle liste */
+    padding: 0; /* Rimuove padding predefinito */
+    margin: 0; /* Rimuove margine predefinito */
 }
 
 /* Stile per i link della navbar */
@@ -15,59 +20,47 @@
     color: rgba(255, 255, 255, 0.87);
     text-decoration: none;
     margin: 0 1rem;
+    transition: color 0.3s; /* Aggiunta transizione per l'effetto hover */
 }
 
 /* Effetto hover per i link della navbar */
 .navbar a:hover {
-    color: #646cff;
-    /* Colore hover */
+    color: #646cff; /* Colore hover */
 }
 
 /* Stile per il logo nella navbar */
 .navbar .logo {
-    height: 4em;
-    /* Dimensione del logo */
+    height: 4em; /* Dimensione del logo */
 }
 
 /* Media query per il tema chiaro */
 @media (prefers-color-scheme: light) {
     .navbar {
-        background-color: #ffffff;
-        /* Sfondo chiaro */
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        /* Bordo inferiore chiaro */
+        background-color: #ffffff; /* Sfondo chiaro */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Bordo inferiore chiaro */
     }
 
     .navbar a {
-        color: #213547;
-        /* Colore del testo chiaro */
+        color: #213547; /* Colore del testo chiaro */
     }
 
     .navbar a:hover {
-        color: #535bf2;
-        /* Colore hover chiaro */
+        color: #535bf2; /* Colore hover chiaro */
     }
 }
 
 /* Stile responsivo per schermi piccoli */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        /* Disposizione verticale su schermi piccoli */
-        align-items: flex-start;
-        /* Allineamento a sinistra */
-        padding: 1rem;
-        /* Padding ridotto */
-        border-bottom: none;
-        /* Rimuovi bordo inferiore su schermi piccoli */
+        flex-direction: column; /* Disposizione verticale su schermi piccoli */
+        align-items: flex-start; /* Allineamento a sinistra */
+        padding: 1rem; /* Padding ridotto */
+        border-bottom: none; /* Rimuovi bordo inferiore su schermi piccoli */
     }
 
     .navbar a {
-        margin: 0.5rem 0;
-        /* Margine verticale tra i link */
-        width: 100%;
-        /* Larghezza completa per i link */
-        text-align: left;
-        /* Allineamento a sinistra del testo */
+        margin: 0.5rem 0; /* Margine verticale tra i link */
+        width: 100%; /* Larghezza completa per i link */
+        text-align: left; /* Allineamento a sinistra del testo */
     }
 }
