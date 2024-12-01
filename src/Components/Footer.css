@@ -60,6 +60,19 @@
     padding: 0;
     margin: 0;
 }
+/* Tema scuro */
+.dark-theme {
+    color-scheme: dark; 
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+}
+
+/* Tema chiaro */
+.light-theme {
+    color-scheme: light; 
+    color: #213547; 
+    background-color: #ffffff; 
+}
 
 /* Spazio tra gli elementi della lista */
 .footer-links li {

@@ -5,9 +5,7 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-container">
-                <p className="footer-description">
-                    Poggio Software è una società di gestione dati con sede a Roma, Italia. Il nostro team vi aiuterà in ogni fase del tuo progetto digitale. Noi crediamo che il futuro sia digitale.
-                </p>
+                
                 
                 {/* Colonna Logo e Descrizione */}
                 <div className="footer-left">
@@ -15,7 +13,9 @@ function Footer() {
                         src="public/Poggio Software logo.png"
                         alt="Logo Poggio Software"
                         className="footer-logo"
-                    />
+                    />  <p className="footer-description">
+                    Poggio Software è una società di gestione dati con sede a Roma, Italia. Il nostro team vi aiuterà in ogni fase del tuo progetto digitale. Noi crediamo che il futuro sia digitale.
+                </p>
                 </div>
 
                 {/* Colonne Servizi e Contatti */}
