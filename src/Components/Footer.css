@@ -1,0 +1,98 @@
+/* Stile base per il footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Allineamento in alto per il logo e contatti */
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Trasparente per il tema scuro */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative; /* Posizione relativa per il footer */
+}
+
+/* Contenitore a sinistra (logo e descrizione) */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%; /* Limita la larghezza */
+}
+
+/* Contenitore a destra (servizi e contatti) */
+.footer-links-container {
+    display: flex;
+    justify-content: space-between;
+    width: 65%; /* Limita la larghezza delle colonne di destra */
+}
+
+/* Contenitore per la colonna servizzi e contatti */
+.footer-right, .footer-column {
+    width: 48%; /* Occupano il 48% della larghezza rimanente */
+}
+
+/* Stile per i link del footer */
+.footer a {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+/* Effetto hover per i link del footer */
+.footer a:hover {
+    color: #646cff; /* Colore hover */
+}
+
+/* Stile per il logo nel footer */
+.footer-logo {
+    width: 200px; /* Imposta una larghezza fissa per il logo */
+    height: auto; /* Mantiene le proporzioni originali */
+    margin-bottom: 20px; /* Spazio sotto il logo */
+}
+
+/* Rimuove i puntini dalla lista */
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Spazio tra gli elementi della lista */
+.footer-links li {
+    padding: 5px 0;
+}
+
+/* Media query per il tema chiaro */
+@media (prefers-color-scheme: light) {
+    .footer {
+        background-color: #ffffff; /* Sfondo chiaro */
+        border-top: 1px solid rgba(0, 0, 0, 0.1); /* Bordo superiore chiaro */
+    }
+
+    .footer a {
+        color: #213547; /* Colore del testo chiaro */
+    }
+
+    .footer a:hover {
+        color: #535bf2; /* Colore hover chiaro */
+    }
+}
+
+/* Stile responsivo per schermi piccoli */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Disposizione verticale su schermi piccoli */
+        align-items: flex-start; /* Allineamento a sinistra */
+        padding: 1rem; /* Padding ridotto */
+        border-top: none; /* Rimuovi bordo superiore su schermi piccoli */
+    }
+
+    .footer-left, .footer-right, .footer-column {
+        width: 100%; /* Larghezza completa per entrambi i contenitori */
+        text-align: left; /* Allineamento a sinistra del testo */
+    }
+
+    .footer a {
+        margin: 0.5rem 0; /* Margine verticale tra i link */
+        width: 100%; /* Larghezza completa per i link */
+    }
+}
