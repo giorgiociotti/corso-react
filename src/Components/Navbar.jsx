@@ -1,21 +1,23 @@
 import "Navbar.css";
-    function Navbar() {
+import "link.jsx";
+import Link from "./Link";
+function Navbar() {
     return (
         <ul>
             <li>
-                <a href="#">Ciao</a>
+                <Link></Link>
             </li>
             <li>
-                <a href="#">Ciao</a>
+                <Link></Link>
             </li>
             <li>
-                <a href="#">Ciao</a>
+                <Link></Link>
             </li>
             <li>
-                <a href="#">Ciao</a>
+                <Link></Link>
             </li>
             <li>
-                <a href="#">Ciao</a>
+                <Link></Link>
             </li>
         </ul>
     );
