@@ -34,3 +34,7 @@
 .theme-switcher input:checked + .slider::before {
     transform: translateX(20px); /* Sposta lo slider a destra */
 }
+
+.theme-label {
+    margin-left: 10px; /* Spazio tra l'interruttore e il testo */
+}

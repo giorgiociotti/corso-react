@@ -29,3 +29,22 @@ function ThemeSwitcher() {
 }
 
 export default ThemeSwitcher;
+/*slider v2 da testare**/
+/*import { useState } from 'react';
+
+function ThemeSwitcher() {
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDarkTheme(prevTheme => !prevTheme);
+    document.body.classList.toggle('dark-theme', !isDarkTheme);
+  };
+
+  return (
+    <button onClick={toggleTheme}>
+      Cambia Tema
+    </button>
+  );
+}
+
+export default ThemeSwitcher;*/ 

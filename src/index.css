@@ -66,6 +66,15 @@ button:focus-visible {
   color: #213547; 
   background-color: #ffffff; 
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Imposta un font di base */
+  background-color: #f0f0f0; /* Colore di sfondo chiaro */
+}
+
+h1, h2, h3 {
+  margin: 0; /* Rimuove margini predefiniti */
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

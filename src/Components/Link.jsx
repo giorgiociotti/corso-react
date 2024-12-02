@@ -1,8 +1,8 @@
-function Link({children}) {
+function Link({ children, href }) {
     return (
-
-        <a href="#">{children}</a>
-
+        <a href={href} className="link">
+            {children}
+        </a>
     );
 }
 
