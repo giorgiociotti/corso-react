@@ -5,17 +5,16 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-container">
-                
-                
                 {/* Colonna Logo e Descrizione */}
                 <div className="footer-left">
                     <img
                         src="public/Poggio Software logo.png"
                         alt="Logo Poggio Software"
                         className="footer-logo"
-                    />  <p className="footer-description">
-                    Poggio Software è una società di gestione dati con sede a Roma, Italia. Il nostro team vi aiuterà in ogni fase del tuo progetto digitale. Noi crediamo che il futuro sia digitale.
-                </p>
+                    />
+                    <p className="footer-description">
+                        Poggio Software è una società di gestione dati con sede a Roma, Italia. Il nostro team vi aiuterà in ogni fase del tuo progetto digitale. Noi crediamo che il futuro sia digitale.
+                    </p>
                 </div>
 
                 {/* Colonne Servizi e Contatti */}
@@ -24,14 +23,17 @@ function Footer() {
                     <div className="footer-column">
                         <h3 className="footer-title">Servizi</h3>
                         <ul className="footer-links">
-                            <li>Data Integration</li>
-                            <li>Data Analytics</li>
-                            <li>Data Visualization</li>
-                            <li>Soluzioni Cloud</li>
-                            <li>Software Lifecycle Testing</li>
-                            <li>Web Development</li>
-                            <li>Sviluppo Software</li>
-                            <li>Manager dell'Innovazione</li>
+                            <ul>
+                                <li><Link to="/data-integration">Data Integration</Link></li>
+                                <li><Link to="/data-analytics">Data Analytics</Link></li>
+                                <li><Link to="/data-visualization">Data Visualization</Link></li>
+                                <li><Link to="/cloud-solutions">Soluzioni Cloud</Link></li>
+                                <li><Link to="/software-lifecycle-testing">Software Lifecycle Testing</Link></li>
+                                <li><Link to="/web-development">Web Development</Link></li>
+                                <li><Link to="/software-development">Sviluppo Software</Link></li>
+                                <li><Link to="/innovation-manager">Manager dell'Innovazione</Link></li>
+                            </ul>
+
                         </ul>
                     </div>
 
@@ -57,6 +59,6 @@ function Footer() {
             </div>
         </footer>
     );
-};
+}
 
 export default Footer;
