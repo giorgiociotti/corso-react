@@ -1,7 +1,7 @@
-function Link() {
+function Link({children}) {
     return (
 
-        <a href="#">Ciao vengo da Link</a>
+        <a href="#">{children}</a>
 
     );
 }

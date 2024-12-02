@@ -5,19 +5,19 @@ function Navbar() {
     return (
         <ul>
             <li>
-                <Link></Link>
+                <Link>Home</Link>
             </li>
             <li>
-                <Link></Link>
+                <Link>Contatti</Link>
             </li>
             <li>
-                <Link></Link>
+                <Link>About</Link>
             </li>
             <li>
-                <Link></Link>
+                <Link>Vino</Link>
             </li>
             <li>
-                <Link></Link>
+                <Link>Nutella</Link>
             </li>
         </ul>
     );
