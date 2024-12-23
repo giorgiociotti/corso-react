@@ -25,5 +25,8 @@ function Navbar() {
     </nav>
     );
 }
+const NavbarV2 = () => {
+    //nuovo standard
+}
 
 export default Navbar;
